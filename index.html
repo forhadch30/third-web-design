@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma to Html convert</title>
+    <!-- TAILWIND CUSTOM COLOR -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        " gradient-colorss": '#FF8938',
+                        " gradient-end": '#F00',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- GOOGEL FONT ROBOTO  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
+    <style>
+        .roboto-bold-italic {
+            font-family: 'Roboto';
+        }
+    </style>
+</head>
+<header>
+    <nav class=" bg-slate-950 text-white">
+        <div class="navbar max-w-5xl mx-auto">
+            <div class="">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a class="bg-black">Home</a></li>
+                        <li><a class="bg-black">Listings </a></li>
+                        <li><a class="bg-black">Members </a></li>
+                        <li><a class="bg-black">Blog </a></li>
+                        <li><a class="bg-black">Pages</a></li>
+
+                    </ul>
+                </div>
+                <img class="h-10" src="imagess/logo.svg.png" alt="">
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <div class="flex items-center ml-5">
+                        <div class="flex border rounded-full px-2 bg-gray-600">
+                            <li><a>Home</a></li>
+                            <img class="h-1 mt-4" src="imagess/__after.png" alt="">
+                        </div>
+                        <div class="flex">
+                            <li><a>Listings</a></li>
+                            <img class="h-1 mt-4" src="imagess/__after.png" alt="">
+                        </div>
+                        <div class="flex">
+                            <li><a>Members</a></li>
+                            <img class="h-1 mt-4" src="imagess/__after.png" alt="">
+                        </div>
+                        <div class="flex">
+                            <li><a>Blog </a></li>
+                            <img class="h-1 mt-4" src="imagess/__after.png" alt="">
+                        </div>
+                        <div class="flex">
+                            <li><a>Pages</a></li>
+                            <img class="h-1 mt-4" src="imagess/__after.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6 ml-10">
+                        <img src="imagess/Link (1).png" alt="">
+                        <h2 class="">Login / Register</h2>
+                        <div class="flex border rounded-full px-4 py-2">
+                            <h2>Add Property</h2>
+                            <img class="h-4 ml-2" src="imagess/Icon (1).png" alt="">
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div>
+                <img src="imagess/div.elementor-element.png" alt="">
+            </div>
+        </div>
+        <!-- Banner section  -->
+        <section>
+            <div>
+                <img src="imagess/forahd.png" alt="">
+            </div>
+        </section>
+    </nav>
+    <hr class="mt-1">
+</header>
+<main>
+    <!-- See how Realtor can help -->
+    <section class="py-32 max-w-5xl mx-auto p-4">
+        <div class="text-center space-y-2">
+            <h2 class="text-3xl font-semibold">See how Realtor can help</h2>
+            <p class="text-sm font-normal">Aliquam lacinia diam quis lacus euismod</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-14">
+            <div class="space-y-5 text-center p-4">
+                <img class="mx-auto" src="imagess/icon1.svg.png" alt="">
+                <h2 class="text-xl font-semibold">Buy a property</h2>
+                <p>Nullam sollicitudin blandit eros eu pretium.
+                    Nullam maximus ultricies auctor.</p>
+                <div class="border py-2 mx-auto px-2 rounded-lg w-[45%]">
+                    <p class="flex">Find a home <img class="h-4 mt-1 ml-2" src="imagess/pros.png" alt=""></p>
+                </div>
+            </div>
+            <div class="space-y-5 text-center shadow-xl rounded-lg p-4">
+                <img class="mx-auto" src="imagess/icon2.svg.png" alt="">
+                <h2 class="text-xl font-semibold">Buy a property</h2>
+                <p>Nullam sollicitudin blandit eros eu pretium.
+                    Nullam maximus ultricies auctor.</p>
+                <div class="border py-2 mx-auto px-2 rounded-lg w-[45%]">
+                    <p class="flex ">Place an ad <img class="h-4 mt-1 ml-2" src="imagess/pros.png" alt="">
+                    </p>
+                </div>
+            </div>
+            <div class="space-y-5 text-center p-4">
+                <img class="mx-auto" src="imagess/icon3.svg.png" alt="">
+                <h2 class="text-xl font-semibold">Buy a property</h2>
+                <p>Nullam sollicitudin blandit eros eu pretium.
+                    Nullam maximus ultricies auctor.</p>
+                <div class="border py-2 mx-auto px-2 w-[45%] rounded-lg">
+                    <p class="flex">Find a rental <img class="h-4 mt-1 ml-2" src="imagess/pros.png" alt=""></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Discover Our Featured Listings -->
+    <section class="bg-[#F7F7F7] p-4">
+        <div class="py-12 max-w-5xl mx-auto">
+            <div class="flex flex-col lg:flex-row items-center justify-between mb-12">
+                <div>
+                    <h2 class="text-3xl font-semibold">Discover Our Featured Listings</h2>
+                    <p class="text-[#717171]">Aliquam lacinia diam quis lacus euismod</p>
+                </div>
+                <div class="flex mt-4">
+                    <p class="text-sm font-semibold">See All Properties</p>
+                    <img class="h-3 mt-1 ml-1" src="imagess/pros.png" alt="">
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div>
+                    <img src="imagess/Tabpanel → Article.png" alt="">
+                </div>
+                <div>
+                    <img src="imagess/Tabpanel → Article (1).png" alt="">
+                </div>
+                <div>
+                    <img src="imagess/Tabpanel → Article (2).png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Properties by Cities -->
+    <section class="py-28 max-w-5xl mx-auto p-4">
+        <div class="flex items-center justify-between">
+            <div>
+                <h2 class="text-3xl font-semibold mb-2">Properties by Cities</h2>
+                <p>Aliquam lacinia diam quis lacus euismod</p>
+            </div>
+            <div class="flex mt-9">
+                <h2 class="text-sm font-semibold">All Cities</h2>
+                <img class="h-4" src="imagess/pros.png" alt="">
+            </div>
+        </div>
+        <div class="py-12 grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-4">
+            <div class="relative">
+                <img class="h-96 w-96 rounded-lg" src="imagess/jonathan-roger-LY1eyQMFeyo-unsplash.jpg" alt="">
+                <div class="absolute text-white left-10 top-10 text-sm font-bold">
+                    <h2>Los Angeles</h2>
+                    <p>2 Properties</p>
+                </div>
+                <div class="absolute top-40 -ml-6 bg-white rounded-full p-2 flex flex-col lg:flex-row">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+                    </svg>
+
+                </div>
+            </div>
+            <div class="relative">
+                <img class="h-96 w-96 rounded-lg" src="imagess/matt-jones-9CPAjGVB378-unsplash.jpg" alt="">
+                <div class="text-white text-sm font-bold absolute left-10 top-10">
+                    <h2>San Francisco</h2>
+                    <p>1 Property</p>
+                </div>
+            </div>
+            <div class="relative">
+                <img class="h-96 w-96 rounded-lg" src="imagess/michael-heise-vctQ1hwdeXc-unsplash.jpg" alt="">
+                <div class="absolute top-10 left-10 text-white">
+                    <h2 class="text-sm font-bold">New York</h2>
+                    <p>10 Properties</p>
+                </div>
+            </div>
+            <div class="relative">
+                <img class="h-96 w-96 rounded-lg" src="imagess/max-bender-s4I1xpX_ny8-unsplash.jpg" alt="">
+                <div class="absolute left-10 top-10 text-white">
+                    <h2 class="text-sm font-bold">Chicago</h2>
+                    <p>1 Property</p>
+                </div>
+                <div class="absolute -right-6 bg-white rounded-full top-40 p-2 flex-col lg:flex-row">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Let’s find the right selling option for you -->
+    <section class="max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 p-4">
+            <div class="space-y-5 ">
+                <h2 class="text-3xl font-semibold">Let’s find the right selling option for you</h2>
+                <p>As the complexity of buildings to increase, the field of architecture.</p>
+                <div class="flex flex-col lg:flex-row  gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 bg-black rounded-full p-1 text-[#FFFFFF]">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                    </svg>
+                    <h2 class="text-sm font-semibold">Find excellent deals</h2>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 bg-black rounded-full p-1 text-[#FFFFFF]">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                    </svg>
+                    <h2 class="text-sm font-semibold">Friendly host & Fast support</h2>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 bg-black rounded-full p-1 text-[#FFFFFF]">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                    </svg>
+                    <h2 class="text-sm font-semibold">List your own property</h2>
+                </div>
+                <button class="flex gap-1 border rounded-sm p-2">Learn more <img class="mt-1" src="imagess/pros.png"
+                        alt=""></button>
+                <div class="relative">
+                    <img class="absolute lg:-top-20 lg:ml-80" src="imagess/group.png" alt="">
+                </div>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-7">
+                <img class="h-[40%] mt-36 " src="imagess/h1.jpg.png" alt="">
+                <img class="h-[70%]" src="imagess/h2.jpg.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Discover Popular Properties -->
+    <section class="py-24 bg-[#181A20] ">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex justify-between ">
+                <div class="text-white">
+                    <h2 class="text-3xl font-semibold mb-4">Discover Popular Properties</h2>
+                    <p>Aliquam lacinia diam quis lacus euismod</p>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-2 mt-6">
+                    <p class="bg-white text-black p-3 mt-4 rounded">For Sale</p>
+                    <p class="border p-3 mt-4 rounded text-white">For Rent</p>
+                </div>
+            </div>
+            <div class="grid gap-7 py-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <div>
+                    <img src="imagess/Article.png" alt="">
+                </div>
+                <div>
+                    <img src="imagess/Article (1).png" alt="">
+                </div>
+                <div>
+                    <img src="imagess/Article (2).png" alt="">
+                </div>
+                <div>
+                    <img src="imagess/Article (3).png" alt="">
+                </div>
+            </div>
+            <button class="bg-[#EB6753] mx-auto py-3 text-white rounded px-4 flex gap-2">See All Properties <img
+                    class="text-white mt-1" src="imagess/Icon (1).png" alt=""></button>
+        </div>
+    </section>
+    <!-- People Love Living with Homez -->
+    <section class="py-24 bg-[#EB67531C]">
+        <div>
+            <div class="flex justify-between max-w-5xl mx-auto p-4">
+                <div>
+                    <h2 class="text-3xl font-semibold mb-2">People Love Living with Homez</h2>
+                    <p class="text-[#717171]">Aliquam lacinia diam quis lacus euismod</p>
+                </div>
+                <div class="flex gap-1 items-center">
+                    <img class="h-2 w-2" src="imagess/Tablist → Tab - 1 of 2.png" alt="">
+                    <img class="h-2 w-2" src="imagess/Tablist → Tab - 2 of 2.png" alt="">
+                    <img class="h-2 w-2" src="imagess/Tablist → Tab - 2 of 2.png" alt="">
+                    <img class="h-2 w-2" src="imagess/Tablist → Tab - 2 of 2.png" alt="">
+                </div>
+            </div>
+            <div class="grid lg:ml-44 m-4 grid-cols-1 md:grid-cols-2 gap-7 lg:grid-cols-4 ">
+                <div class="mt-10 border p-6 bg-white rounded space-y-4">
+                    <div class="flex justify-between">
+                        <h2 class="text-xl font-semibold">Great Work</h2>
+                        <img src="imagess/SVG (1).png" alt="">
+                    </div>
+                    <p class="text-sm font-semibold">“At vero eos et accusamus et iusto odio
+                        dignissimos ducimus qui blanditiis
+                        praesentium voluptatum deleniti atque
+                        corrupti quos dolores et”</p>
+                    <i class="fa-solid text-[#E59819] fa-star"></i>
+                    <i class="fa-solid text-[#E59819] fa-star"></i>
+                    <i class="fa-solid text-[#E59819] fa-star"></i>
+                    <i class="fa-solid text-[#E59819] fa-star"></i>
+                    <i class="fa-solid text-[#E59819] fa-star"></i>
+                    <hr>
+                    <div class="flex gap-5">
+                        <img class="rounded-full" src="imagess/m13.jpg.png" alt="">
+                        <div>
+                            <h2 class="text-sm font-semibold">Ali Tufan</h2>
+                            <p class="text-[#717171]">Marketing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10 border p-6 bg-white rounded space-y-4">
+                    <div class="flex justify-between">
+                        <h2 class="text-xl font-semibold">Great Work</h2>
+                        <img src="imagess/SVG (1).png" alt="">
+                    </div>
+                    <p class="text-sm font-semibold">“At vero eos et accusamus et iusto odio
+                        dignissimos ducimus qui blanditiis
+                        praesentium voluptatum deleniti atque
+                        corrupti quos dolores et”</p>
+                    <i class="fa-solid text-[#E59819] fa-star"></i>
+                    <i class="fa-solid text-[#E59819] fa-star"></i>
+                    <i class="fa-solid text-[#E59819] fa-star"></i>
+                    <i class="fa-solid text-[#E59819] fa-star"></i>
+                    <i class="fa-regular text-[#E59819] fa-star"></i>
+                    <hr>
+                    <div class="flex gap-5">
+                        <img class="rounded-full" src="imagess/m10.jpg.png" alt="">
+                        <div>
+                            <h2 class="text-sm font-semibold">Albert Flores</h2>
+                            <p class="text-[#717171]">Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10 border p-6 bg-white rounded space-y-4">
+                    <div class="flex justify-between">
+                        <h2 class="text-xl font-semibold">Great Work</h2>
+                        <img src="imagess/SVG (1).png" alt="">
+                    </div>
+                    <p class="text-sm font-semibold">“At vero eos et accusamus et iusto odio
+                        dignissimos ducimus qui blanditiis
+                        praesentium voluptatum deleniti atque
+                        corrupti quos dolores et”</p>
+                    <i class="fa-solid text-[#E59819] fa-star"></i>
+                    <i class="fa-solid text-[#E59819] fa-star"></i>
+                    <i class="fa-solid text-[#E59819] fa-star"></i>
+                    <i class="fa-solid text-[#E59819] fa-star"></i>
+                    <i class="fa-solid text-[#E59819] fa-star"></i>
+                    <hr>
+                    <div class="flex gap-5">
+                        <img class="rounded-full" src="imagess/m9.jpg.png" alt="">
+                        <div>
+                            <h2 class="text-sm font-semibold">Robert Fox</h2>
+                            <p class="text-[#717171]">Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10 border p-6 bg-white rounded space-y-4">
+                    <div class="flex justify-between">
+                        <h2 class="text-xl font-semibold">Great Work</h2>
+                        <img src="imagess/SVG (1).png" alt="">
+                    </div>
+                    <p class="text-sm font-semibold">“At vero eos et accusamus et iusto odio
+                        dignissimos ducimus qui blanditiis
+                        praesentium voluptatum deleniti atque
+                        corrupti quos dolores et”</p>
+                    <i class="fa-solid text-[#E59819] fa-star"></i>
+                    <i class="fa-solid text-[#E59819] fa-star"></i>
+                    <i class="fa-solid text-[#E59819] fa-star"></i>
+                    <i class="fa-regular text-[#E59819] fa-star"></i>
+                    <i class="fa-regular text-[#E59819] fa-star"></i>
+                    <hr>
+                    <div class="flex gap-5">
+                        <img class="rounded-full" src="imagess/m8.jpg.png" alt="">
+                        <div>
+                            <h2 class="text-sm font-semibold">Marvin McKinney</h2>
+                            <p class="text-[#717171]">Marketing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- From Our Blog -->
+    <section>
+        <div class="text-center py-28">
+            <h2 class="text-3xl font-semibold mb-2">From Our Blog</h2>
+            <p>Aliquam lacinia diam quis lacus euismod</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 p-4 lg:grid-cols-3 max-w-5xl mx-auto gap-7">
+            <div class="space-y-4">
+                <img class="rounded-xl"
+                    src="imagess/Figure → Link → p11-q38zewj2rpvfbg4j3u8tlic1y6iuf8mj8d2eblcq2k.jpg.png" alt="">
+                <div class="relative flex">
+                    <h2 class="text-[#717171]">Townhome</h2>
+                    <div class="bg-white shadow-lg absolute right-10 -top-10 rounded-sm w-[40px] text-center">
+                        <p>Feb</p>
+                        <p class="text-xl font-semibold">03</p>
+                    </div>
+                </div>
+                <p class="text-sm font-semibold">Unveils the Best Canadian Cities for Biking and Walk</p>
+            </div>
+            <div class="space-y-4">
+                <img class="rounded-xl"
+                    src="imagess/Figure → Link → p13-q38zewj2rpvfbg4j3u8tlic1y6iuf8mj8d2eblcq2k.jpg.png" alt="">
+                <div class="relative flex">
+                    <h2 class="text-[#717171]">Villa</h2>
+                    <div class="bg-white shadow-lg absolute right-10 -top-10 rounded-sm w-[40px] text-center">
+                        <p>Feb</p>
+                        <p class="text-xl font-semibold">03</p>
+                    </div>
+                </div>
+                <p class="text-sm font-semibold">Unveils the Best Canadian Cities for Biking and Walk</p>
+            </div>
+            <div class="space-y-4">
+                <img class="rounded-xl"
+                    src="imagess/Figure → Link → featured-img-q38zevl8kvu4zu5w9bu710klcsnh7jisw8ewube48s.jpg (1).png"
+                    alt="">
+                <div class="relative flex">
+                    <h2 class="text-[#717171]">Townhome</h2>
+                    <div class="bg-white shadow-lg absolute right-10 -top-10 rounded-sm w-[40px] text-center">
+                        <p>Feb</p>
+                        <p class="text-xl font-semibold">03</p>
+                    </div>
+                </div>
+                <p class="text-sm font-semibold">Unveils the Best Canadian Cities for Biking and Walk</p>
+            </div>
+        </div>
+    </section>
+    <!-- Trusted by the world’s best -->
+    <section class="my-32">
+        <h2 class="text-center">Trusted by the world’s best</h2>
+        <div class="flex flex-col  lg:flex-row gap-24 items-center mt-5 max-w-5xl mx-auto">
+            <div>
+                <img src="imagess/Link → b1.jpg.png" alt="">
+            </div>
+            <div>
+                <img src="imagess/Link → b2.jpg.png" alt="">
+            </div>
+            <div>
+                <img src="imagess/Link → b3.jpg.png" alt="">
+            </div>
+            <div>
+                <img src="imagess/Link → b4.jpg.png" alt="">
+            </div>
+            <div>
+                <img src="imagess/Link → b5.jpg.png" alt="">
+            </div>
+            <div>
+                <img src="imagess/Link → b6.jpg.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Need help? Talk to our expert. -->
+    <section class="lg:px-20 py-10">
+        <div class="flex flex-col lg:flex-row bg-[#d9d4d4] lg:gap-60 p-14">
+            <div>
+                <h2 class="text-3xl font-semibold">Need help? Talk to our expert.</h2>
+                <p>Talk to our experts or Browse through more properties.</p>
+            </div>
+            <div class="flex flex-col relative gap-4 lg:flex-row items-center">
+                <p class="border flex mt-2 bg-white  py-3 ml-2 p-2 rounded text-sm font-semibold">Contact Us
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                        <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z" clip-rule="evenodd" />
+                      </svg>
+                      
+                </p>
+                <p class="bg-black text-white py-3 mt-2 ml-2 p-2 rounded text-sm font-semibold"><i
+                        class="fa-solid fa-phone-volume"></i> 920
+                    851 8585</p>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="bg-black text-white footer">
+    <div class="flex max-w-5xl mx-auto">
+        <div class="space-y-4">
+            <div class="flex gap-10 flex-col lg:flex-row items-center">
+                <div>
+                    <img src="imagess/logo.svg.png" alt="">
+                    <p class="mt-4">Total Free Customer Care</p>
+                    <p>+(088) 123 456 789</p>
+                </div>
+                <div class="mt-16">
+                    <h2>Live Support?</h2>
+                    <p>hi@homez.com</p>
+                </div>
+            </div>
+            <div>
+                <p>Apps</p>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-2">
+                <img class="w-32 h-12" src="imagess/android.png" alt="">
+                <img class="w-32 h-12" src="imagess/ios.png" alt="">
+            </div>
+            <div>
+                <p class="text-sm font-semibold">Follow us on social media</p>
+            </div>
+            <div class="space-x-7">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+        <div class="ml-10">
+            <div>
+                <h4 class="text-sm font-semibold mb-8">Keep Yourself Up to Date</h4>
+                <p class="-mb-9 ml-2">Your Email</p>
+                <p class="bg-[#FFFFFF14] py-6 px-60 rounded text-start"></p>
+                <div class="relative">
+                    <p class="absolute right-4 -top-8">Subscribe</p>
+                </div>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-10">
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-semibold mt-2">Popular Search</h2>
+                    <p class="hover:text-red-500 text-[#BEBDBD]"><a href="">Apartment for Sale</a></p>
+                    <p class="hover:text-red-500 text-[#BEBDBD]"><a href="">Apartment for Rent</a></p>
+                    <p class="hover:text-red-500 text-[#BEBDBD]"><a href="">Offices for Sale</a></p>
+                    <p class="hover:text-red-500 text-[#BEBDBD]"><a href="">Offices for Rent</a></p>
+                </div>
+                <div class="space-y-4 mt-2">
+                    <h2 class="text-2xl font-semibold">Quick Links</h2>
+                    <p class="hover:text-red-500 text-[#BEBDBD]"><a href="">Terms of Use</a></p>
+                    <p class="hover:text-red-500 text-[#BEBDBD]"><a href="">Privacy Policy</a></p>
+                    <p class="hover:text-red-500 text-[#BEBDBD]"><a href="">Pricing Plans</a></p>
+                    <p class="hover:text-red-500 text-[#BEBDBD]"><a href="">Our Services</a></p>
+                    <p class="hover:text-red-500 text-[#BEBDBD]"><a href="">Contact</a></p>
+                    <p class="hover:text-red-500 text-[#BEBDBD]"><a href="">Careers</a></p>
+                    <p class="hover:text-red-500 text-[#BEBDBD]"><a href="">FAQs</a></p>
+                </div>
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-semibold mt-2">Discovery</h2>
+                    <p class="hover:text-red-500 text-[#BEBDBD]"><a href="">Chicago</a></p>
+                    <p class="hover:text-red-500 text-[#BEBDBD]"><a href="">Los Angeles</a></p>
+                    <p class="hover:text-red-500 text-[#BEBDBD]"><a href="">New Jersey</a></p>
+                    <p class="hover:text-red-500 text-[#BEBDBD]"><a href="">New York</a></p>
+                    <p class="hover:text-red-500 text-[#BEBDBD]"><a href="">California</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- <div class="flex gap-2 justify-between max-w-5xl mx-auto py-5">
+        <h2>© Homez – All rights reserved</h2>
+        <div class="flex">
+            <p>Privacy .</p>
+            <p>Terms .</p>
+            <p>Sitemap </p>
+        </div>
+    </div> -->
+</footer>
+
+<body>
+
+</body>
+
+</html>
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/forhadch30/third-web-design.git
+git push -u origin main
